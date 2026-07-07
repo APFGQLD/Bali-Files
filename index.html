@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bali Files - Paradise Lost</title>
+    
+    <!-- External Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased selection:bg-red-600 selection:text-white">
+
+    <!-- HERO SECTION -->
+    <header class="relative h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+        <!-- Background Image with heavy overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-black bg-opacity-80 z-10"></div>
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1920&q=80" alt="Dark Bali Villa" class="w-full h-full object-cover filter grayscale blur-sm opacity-50 scale-105 transform origin-center animate-[pulse_10s_ease-in-out_infinite_alternate]">
+        </div>
+
+        <div class="z-20 w-full max-w-4xl mx-auto reveal active">
+            <h1 class="text-6xl md:text-8xl font-bold text-red-600 mb-2 tracking-tighter glow-red title-font">THE BALI FILES</h1>
+            <h2 class="text-2xl md:text-4xl text-white mb-8 tracking-wide title-font">Paradise Lost. The Great Property Illusion.</h2>
+            
+            <div class="h-16">
+                <p class="text-lg md:text-2xl text-gray-300 font-light typing-container">
+                    They promised 15% returns. <strong class="text-white">They lied.</strong>
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Moved Warning Block (No Card) -->
+        <div class="absolute bottom-24 left-0 right-0 z-20 w-full max-w-3xl mx-auto px-4 text-center">
+            <p class="text-red-500 font-bold text-lg md:text-xl mb-2 uppercase tracking-widest title-font flex items-center justify-center gap-2 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)]">
+                <i class="fas fa-exclamation-triangle"></i> Warning
+            </p>
+            <p class="text-gray-300 text-sm md:text-base max-w-2xl mx-auto drop-shadow-md">
+                If you are considering investing in or selling property in Bali or Indonesia, please read this page and heed our warning before risking your life savings.
+            </p>
+        </div>
+
+        <div class="absolute bottom-10 z-20 animate-bounce cursor-pointer" onclick="document.getElementById('section1').scrollIntoView({behavior: 'smooth'})">
+            <i class="fas fa-chevron-down text-3xl text-red-600 glow-red"></i>
+        </div>
+    </header>
+
+    <!-- PREAMBLE: WE BELIEVED IT TOO -->
+    <section class="py-20 bg-zinc-950 px-4 border-b border-zinc-900 relative z-20">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <h2 class="text-3xl md:text-5xl text-white mb-6 title-font">We Believed the Lie Too</h2>
+            <p class="text-xl text-gray-400 leading-relaxed mb-6">
+                We want to be perfectly clear: <strong class="text-white">we are not the scammers.</strong> 
+            </p>
+            <p class="text-lg text-gray-400 leading-relaxed">
+                Like you, we believed the promises made by these developers. We reviewed the math, conducted our own independent checks, and thought we were offering secure, high-yield opportunities to our clients. Instead, we were left holding the bag—just like our investors.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 1: THE CRASH -->
+    <section id="section1" class="py-24 bg-slash px-4 z-10 relative">
+        <div class="flashlight"></div>
+        <div class="max-w-5xl mx-auto z-10 relative">
+            <div class="border-l-4 border-red-600 pl-6 md:pl-10 reveal">
+                <h2 class="text-4xl md:text-6xl text-white mb-6 title-font">The Myth of the Bali Boom</h2>
+                <p class="text-xl text-gray-400 mb-6 leading-relaxed">
+                    For almost five years, we were on the front lines, selling Bali property across numerous developments. At first, the illusion held up. Investors earned interest during construction, the builds progressed, and everyone was happy.
+                </p>
+                <p class="text-xl text-gray-400 mb-8 leading-relaxed">
+                    But then, the buildings completed. <span class="text-red-500 font-semibold">The truth was revealed.</span>
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                    <!-- The Promise Card -->
+                    <div class="bg-black border border-zinc-800 p-8 rounded-lg box-glow-red relative overflow-hidden">
+                        <div class="absolute inset-0 z-0 opacity-30">
+                            <svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+                                <defs>
+                                    <linearGradient id="grad-green" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#22c55e" stop-opacity="0.15" />
+                                        <stop offset="100%" stop-color="#22c55e" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="animated-area" fill="url(#grad-green)" d="M 0 80 Q 40 75 60 40 T 100 15 L 100 100 L 0 100 Z" opacity="0"/>
+                                <path class="animated-graph" fill="none" stroke="#22c55e" stroke-width="2" d="M 0 80 Q 40 75 60 40 T 100 15" stroke-dasharray="200" stroke-dashoffset="200" style="filter: drop-shadow(0 0 3px rgba(34, 197, 94, 0.3));" />
+                            </svg>
+                        </div>
+                        <div class="relative z-10">
+                            <h3 class="text-red-600 text-2xl mb-2 title-font">The Promise</h3>
+                            <div class="text-5xl font-bold text-white mb-2 title-font"><span id="promise-counter">8-15</span>% <span class="text-xl text-gray-500">p.a.</span></div>
+                            <p class="text-gray-500">Guaranteed returns printed on glossy brochures.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- The Reality Card -->
+                    <div class="bg-black border border-red-900 p-8 rounded-lg animate-pulse-red relative overflow-hidden">
+                        <div class="absolute inset-0 bg-red-600 opacity-5 z-0"></div>
+                        <div class="absolute inset-0 z-0 opacity-30">
+                            <svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
+                                <defs>
+                                    <linearGradient id="grad-red" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#dc2626" stop-opacity="0.2" />
+                                        <stop offset="100%" stop-color="#dc2626" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <path class="animated-area" fill="url(#grad-red)" d="M 0 20 C 30 20 40 85 100 95 L 100 100 L 0 100 Z" opacity="0"/>
+                                <path class="animated-graph" fill="none" stroke="#dc2626" stroke-width="2" d="M 0 20 C 30 20 40 85 100 95" stroke-dasharray="200" stroke-dashoffset="200" style="filter: drop-shadow(0 0 3px rgba(220, 38, 38, 0.4));" />
+                            </svg>
+                        </div>
+                        <div class="relative z-10">
+                            <h3 class="text-red-600 text-2xl mb-2 title-font">The Reality</h3>
+                            <div class="text-5xl font-bold text-white mb-2 title-font"><span id="reality-counter">0.5-1.5</span>% <span class="text-xl text-gray-500">p.a.</span></div>
+                            <p class="text-gray-500">Market saturated. Occupancy collapsed. Nightly rates plummeted.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: OUR STORY -->
+    <section class="py-24 bg-black px-4 relative">
+        <div class="max-w-4xl mx-auto text-center reveal">
+            <i class="fas fa-file-invoice-dollar text-5xl text-red-700 mb-6 glow-red"></i>
+            <h2 class="text-4xl md:text-5xl text-white mb-8 title-font">We were on the inside. <br/>Now we're owed...</h2>
+            
+            <div class="text-7xl md:text-9xl font-bold text-red-600 mb-8 tracking-tighter title-font glow-red" id="debt-counter">
+                $0
+            </div>
+            
+            <p class="text-xl text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                We are just one company operating in this market, and the developers have left us bleeding. As the market turned, our commissions stopped being paid. We are currently owed <strong class="text-white">A$350,000 in unpaid commissions</strong> for the work we did in good faith.
+            </p>
+            <p class="text-xl text-red-500 mt-6 font-semibold italic">
+                If they are willing to screw over their primary sales partners, what do you think they will do to you?
+            </p>
+        </div>
+    </section>
+
+    <!-- REDACTION MINI-SECTION -->
+    <section class="py-24 bg-zinc-950 px-4 border-t border-zinc-900 relative z-20">
+        <div class="w-full max-w-4xl mx-auto text-center reveal">
+            <p class="text-red-500 font-bold text-xl md:text-2xl mb-6 uppercase tracking-widest title-font flex items-center justify-center gap-2 drop-shadow-[0_0_8px_rgba(220,38,38,0.8)]">
+                <i class="fas fa-user-secret text-2xl"></i> Why Are Names Redacted?
+            </p>
+            <p class="text-gray-300 text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md leading-relaxed">
+                We would prefer to publicly expose these specific businesses to protect future investors. However, we have had our personal assets on the island threatened. Furthermore, under Indonesia's strict defamation and electronic information laws (UU ITE), exposing these bad actors directly could result in our imprisonment. We are forced to censor their identities to protect ourselves, but their malicious tactics and this warning remain exactly the same.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: THE BAD ACTORS -->
+    <section class="py-24 bg-zinc-950 px-4 border-t border-b border-zinc-900 relative overflow-hidden">
+        <!-- Decorative background siren glow -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-red-900 rounded-full blur-[150px] opacity-10 pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto relative z-10">
+            <div class="flex items-center gap-4 mb-10 reveal">
+                <i class="fas fa-exclamation-triangle text-4xl text-red-600 animate-pulse"></i>
+                <h2 class="text-4xl md:text-6xl text-white title-font">Beware of <span class="text-red-600">[REDACTED]</span></h2>
+            </div>
+
+            <div class="prose prose-invert prose-lg max-w-none text-gray-400 reveal">
+                <p class="mb-8">We thought we found a safe harbor. We went into business with <span class="text-red-600 font-mono tracking-widest font-bold">[REDACTED]</span>, led by what appeared to be a confidence-inspiring, trustworthy management team of Australians, French, and other international partners.</p>
+                <p>They have been operating on the island for years, boast a flashy website, and feature what we now know to be heavily sanitized online reviews. Their Australian Sales Director came from a prominent Australian real estate agency, and they continue to outsource Australian sales agents to aggressively push their operations today. We believed them to be completely trustworthy.</p>
+                <p class="mt-12 mb-10 text-white font-bold text-xl border-l-4 border-red-600 pl-4 py-1">We were wrong. For two years, the facade held. Then, the mask slipped.</p>
+                
+                <ul class="space-y-4 mb-12 list-none p-0">
+                    <li class="flex items-start gap-4 p-4 bg-zinc-900 border-l-2 border-red-600 rounded-r text-gray-300 reveal" style="transition-delay: 100ms;">
+                        <i class="fas fa-times text-red-600 mt-1"></i>
+                        <span><strong>Commissions went completely unpaid.</strong></span>
+                    </li>
+                    <li class="flex items-start gap-4 p-4 bg-zinc-900 border-l-2 border-red-600 rounded-r text-gray-300 reveal" style="transition-delay: 200ms;">
+                        <i class="fas fa-times text-red-600 mt-1"></i>
+                        <span><strong>Clients were stolen directly from us.</strong></span>
+                    </li>
+                    <li class="flex items-start gap-4 p-4 bg-zinc-900 border-l-2 border-red-600 rounded-r text-gray-300 reveal" style="transition-delay: 300ms;">
+                        <i class="fas fa-times text-red-600 mt-1"></i>
+                        <span><strong>Contracts between the developer and our clients were entirely ignored.</strong></span>
+                    </li>
+                    <li class="flex items-start gap-4 p-4 bg-zinc-900 border-l-2 border-red-600 rounded-r text-gray-300 reveal" style="transition-delay: 400ms;">
+                        <i class="fas fa-times text-red-600 mt-1"></i>
+                        <span><strong>Construction halted on site.</strong></span>
+                    </li>
+                    <li class="flex items-start gap-4 p-4 bg-zinc-900 border-l-2 border-red-600 rounded-r text-gray-300 reveal" style="transition-delay: 500ms;">
+                        <i class="fas fa-times text-red-600 mt-1"></i>
+                        <span><strong>Communications went dark - nobody would pick up a phone.</strong></span>
+                    </li>
+                    <li class="flex items-start gap-4 p-4 bg-zinc-900 border-l-2 border-red-600 rounded-r text-gray-300 reveal" style="transition-delay: 600ms;">
+                        <i class="fas fa-times text-red-600 mt-1"></i>
+                        <span><strong>Clients were left in the dark.</strong></span>
+                    </li>
+                </ul>
+
+                <blockquote class="border-l-4 border-red-700 pl-6 py-2 my-8 bg-black bg-opacity-50 italic">
+                    "When confronted, they stuck their heads in the sand. Then came the extortion. <span class="text-red-600 font-mono tracking-widest font-bold">[REDACTED]</span> explicitly threatened us, stating they would halt the construction of the hotel and withhold both commissions and client interest payments unless we sold more properties for them."
+                </blockquote>
+
+                <p class="text-2xl text-white font-bold text-center mt-12 bg-red-950 p-6 rounded-lg border border-red-900">
+                    These businesses have burnt us. They have burnt our investors.<br/>
+                    <span class="text-red-500 glow-red">And if you sign on the dotted line, they will burn you too.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: A WIDER EPIDEMIC (LOMBOK) -->
+    <section class="py-24 bg-black px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl text-center text-white mb-4 reveal title-font">It's Not Just Bali.</h2>
+            <h3 class="text-2xl md:text-3xl text-center text-red-600 mb-12 reveal title-font">The Lombok Epidemic</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal">
+                <div>
+                    <p class="text-xl text-gray-400 mb-6 leading-relaxed">
+                        This isn't an isolated incident with one bad developer. The Indonesian property market is currently a playground for scam artists targeting Australian investors.
+                    </p>
+                    <p class="text-xl text-gray-400 mb-8 leading-relaxed">
+                        Look no further than the recent <strong>A Current Affair</strong> exposé on the notorious <strong>Jamie McIntyre</strong> and his alleged scamming escapades over in Lombok. It is the exact same playbook: big promises, shiny brochures, and devastated Australian investors and small businesses left with nothing.
+                    </p>
+                    
+                    <div class="flex flex-col gap-4">
+                        <a href="https://www.nine.com.au/australia-news/a-current-affair/new-troubles-for-brothers-jamie-and-dennis-mcintyre-20260113-p5rm11.html" target="_blank" class="inline-flex items-center justify-center gap-3 bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 text-white py-4 px-6 rounded transition-colors group">
+                            <i class="far fa-newspaper text-xl group-hover:text-red-500 transition-colors"></i>
+                            Read the Full 9News Investigation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Video Embed Container -->
+                <div class="relative w-full aspect-video rounded-lg overflow-hidden box-glow-red border border-zinc-800">
+                    <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/E1Dthw1yql0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / CTA -->
+    <footer class="py-24 bg-zinc-950 px-4 border-t border-red-900 text-center relative z-20">
+        <div class="max-w-3xl mx-auto reveal">
+            <h2 class="text-5xl md:text-7xl text-white mb-6 title-font">DON'T BE THE <span class="text-red-600 glow-red">NEXT VICTIM</span>.</h2>
+            <p class="text-xl text-gray-400 mb-10">
+                Before you invest your life savings into a Bali villa, an off-the-plan hotel, or a Lombok resort, know who you are dealing with. The brochures look beautiful, but the reality is built on broken contracts, stolen funds, and intimidation.
+            </p>
+            
+            <div class="bg-black p-8 border border-zinc-800 rounded-lg mb-10 shadow-[0_0_30px_rgba(220,38,38,0.15)]">
+                <h3 class="text-2xl text-white mb-4 title-font">Have you been burned by developers in Indonesia?</h3>
+                <a href="mailto:baliproperty@proton.me" class="inline-block bg-red-700 hover:bg-red-600 text-white font-bold py-4 px-8 rounded text-xl w-full md:w-auto transition-all shadow-[0_0_15px_rgba(220,38,38,0.5)] hover:shadow-[0_0_25px_rgba(220,38,38,0.8)] title-font text-center">
+                    SHARE YOUR STORY SECURELY
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-600 italic">
+                Disclaimer: The Bali Files is dedicated to transparency and warning Australian investors about the realities of the Indonesian off-the-plan property market. All claims are based on our direct experiences and publicly available journalistic investigations.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+</html>

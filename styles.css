@@ -1,0 +1,108 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #e5e5e5;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .title-font {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Custom Animations */
+.glow-red {
+    text-shadow: 0 0 15px rgba(220, 38, 38, 0.8), 0 0 30px rgba(220, 38, 38, 0.4);
+}
+
+.box-glow-red {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.3);
+}
+
+@keyframes pulse-border {
+    0% { border-color: rgba(220, 38, 38, 0.4); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+    70% { border-color: rgba(220, 38, 38, 1); box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+    100% { border-color: rgba(220, 38, 38, 0.4); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+.animate-pulse-red {
+    animation: pulse-border 2.5s infinite;
+}
+
+/* Scroll Reveal Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Typing Effect */
+.typing-container {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #dc2626;
+    animation: typing 3s steps(40, end) forwards, blink-caret .75s step-end infinite;
+    width: max-content;
+}
+
+@keyframes typing {
+    from { max-width: 0 }
+    to { max-width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #dc2626; }
+}
+
+/* Red Slash Background Pattern */
+.bg-slash {
+    background: linear-gradient(135deg, #050505 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #050505 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #050505 25%, transparent 25%),
+                linear-gradient(45deg, #050505 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #0f0f0f;
+    position: relative;
+}
+
+.bg-slash {
+    background: linear-gradient(135deg, #050505 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #050505 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #050505 25%, transparent 25%),
+                linear-gradient(45deg, #050505 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #0f0f0f;
+    position: relative;
+}
+
+.flashlight {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: radial-gradient(circle 400px at var(--cursor-x, 50%) var(--cursor-y, 50%), transparent 0%, rgba(5, 5, 5, 0.98) 100%);
+    transition: background 0.1s ease;
+}
+
+@keyframes draw-line {
+    to { stroke-dashoffset: 0; }
+}
+
+@keyframes fade-in-area {
+    to { opacity: 1; }
+}
+
+.reveal.active .animated-graph {
+    animation: draw-line 2.5s ease-out forwards;
+}
+
+.reveal.active .animated-area {
+    animation: fade-in-area 1.5s ease-out 1s forwards;
+}
