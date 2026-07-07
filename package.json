@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "serve ."
+    "dev": "serve .",
+    "build": "echo 'No build required for vanilla HTML/CSS/JS' && exit 0"
   },
   "keywords": [],
   "author": "",
